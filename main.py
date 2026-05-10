@@ -15,9 +15,9 @@ logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO
 )
-logger = logging.getLogger(__Magnum__)
+logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = os.getenv("8568851239:AAHqJvAPuMNOav9Ca2j33OosmmIavd_0DyY")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
